@@ -1,7 +1,9 @@
 import React from "react";
 import { Button } from "@heroui/react";
+import { useNavigate } from "react-router-dom";
 
 export default function NotFoundPage() {
+  const navigate = useNavigate();
   return (
     <div className="h-screen flex flex-col justify-center items-center bg-[#F8F9FA]">
       <h1 className="text-6xl font-bold text-gray-800 mb-4">404</h1>
@@ -16,7 +18,7 @@ export default function NotFoundPage() {
         color="success"
         size="lg"
         className="text-lg hover:bg-green-600 px-6 py-3 rounded"
-        onPress={() => (window.location.href = "/")}
+        onPress={() => navigate("/")}
       >
         Go to Homepage
       </Button>
