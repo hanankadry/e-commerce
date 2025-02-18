@@ -28,7 +28,7 @@ export default function Checkout() {
     setIsLoading(true);
     await axios
       .post(
-        `https://ecommerce.routemisr.com/api/v1/orders/checkout-session/${id}`,
+        `https://ecommerce.routemisr.com/api/v1/orders/${id}`,
         {
           shippingAddress: values,
         },
