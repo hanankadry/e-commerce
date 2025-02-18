@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.container {
+    @apply mx-auto;
+}
+
+@media screen and (min-width: 1280px) {
+    .container {
+        max-width: 1152px;
+    }
+}
